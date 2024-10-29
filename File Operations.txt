@@ -1,0 +1,107 @@
+s=open('demo.txt',mode='r')
+
+print(s.read())
+
+s.close()
+
+#writeoperation
+
+s=open('demo.txt',mode='w')
+
+s.write("hello good morning")
+
+s.close()
+
+#appendoperation
+
+s=open('demo.txt',mode='a')
+
+s.write("bye bye write")
+
+s.close()
+#readandwrite operation
+
+s=open('demo.txt',mode='r+')
+
+print(s.read())
+
+s.write("r+mode")
+
+s.close()
+
+#writeandread operation
+
+s=open('demo.txt',mode='w+')
+
+
+s.write("w+mode")
+
+s.seek(0)
+
+print(s.read()b 
+f=open('demo.txt',mode='r')
+
+lines-f.readlines()
+
+for i in lines:
+
+print(i,end=" ")
+
+f.close()
+
+#binaryfile
+
+import csv
+
+f=open('student.csv',mode='r')
+
+r=csv.reader(f)
+
+data=list(r)
+
+for i in data:
+ for j in i:
+
+print(j.end=" ")
+
+print()
+
+f.close()
+
+#zipfile
+ from zipfile import* 
+f=zipfile('sample.txt',mode='r',ZIP_STORED)
+
+names=f.namelist()
+
+for i in names:
+
+print("filename:",i)
+
+ff=open(i,'r')
+
+print(ff.read())
+
+print()
+with open('demo.txt',mode='w') as f
+
+f.write("hi")
+
+f.write("hello")
+
+print("is it closed",f.closed)
+
+print("is it closed",f.closed)
+
+#tell
+
+f=open('demo.txt',mode='r')
+
+print(f.tell())
+
+print(f.read(3))
+
+print(f.tell())
+
+print(f.read(4))
+
